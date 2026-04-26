@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/logo.png">
+    <script src="https://kit.fontawesome.com/9732d24f90.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>sanjuan-zedrick</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="nav-logo">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" style="--i:1" class="nav-link">Home</a></li>
+                    <li><a href="#about" style="--i:1" class="nav-link">About</a></li>
+                    <li><a href="#skills" style="--i:1" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" style="--i:1" class="nav-link">Projects</a></li>
+                    <li><a href="#education" style="--i:1" class="nav-link">Education</a></li>
+                    <li><a href="#contact" style="--i:1" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Hi, I'm <span class="accent">Zedrick Sam</span></h1>
+                <h2><span class="text"></span></h2><br>
+                <p class="description">I am a 3rd-year BSIT student driven by curiosity and a commitment to excellence.
+                    My goal is to build the gap between emerging tech trends and professional web and mobile
+                    development. </p>
+            </div>
+
+            <div class="home-sci">
+                <a href="https://web.facebook.com/zedrick.sanjuan.3" target="_blank" style="--i:7"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/nottced.rx/" target="_blank" style="--i:8"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@sanjuan_zedrick" target="_blank" style="--i:9"><i
+                        class="fa-brands fa-tiktok"></i></a>
+                <a href="https://whatsapp.com/dl/" target="_blank" style="--i:10"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">Learn More</button>
+            </div>
+        </div>
+
+        <div class="scroll-indicator">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+            </svg>
+        </div>
+
+        <div class="home-img">
+            <div class="img-box">
+                <div class="img-item">
+                    <img src="image/sam.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content scroll-reveal">
+                    <h2>About <span class="accent">Me</span></h2>
+                    <div class="heading-underline"></div>
+                    <p>I'm a passionate web developer with a strong foundation in HTML, CSS, and JavaScript. I love
+                        building interactive, user-friendly web applications that solve real problems.</p>
+                    <p>My journey in web development started with a curiosity about how websites work. Since then, I've
+                        been continuously learning and improving my skills in modern web technologies.</p>
+                    <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source
+                        projects, or sharing knowledge with the developer community.</p>
+                    <button class="btn btn-primary" onclick="scrollToSection('interest')">View more</button>
+                </div>
+            </div>
+
+            <!-- Personal Interests Section -->
+            <div id="interest" class="interests-section">
+                <h3>Personal <span class="accent">Interests</span></h3>
+                <center>
+                    <div class="heading-underline center"></div>
+                </center>
+
+                <!-- Hobbies Category -->
+                <div class="interest-category scroll-reveal">
+                    <div class="category-header">
+                        <h4>Hobbies</h4>
+                    </div>
+                    <div class="category-items">
+                        <div class="interest-item">
+                            <div class="item-image">
+                                <img src="https://fastly.mwm-storage.mwmcdn.com/raw_files/5a4a357b-a996-42e7-897e-89b49992e24b?height=640&format=webp"
+                                    alt="Gaming">
+                            </div>
+                            <h5>Mobile Games</h5>
+                            <p>Playing mobile games like Mobile legends: Bang Bang</p>
+                        </div>
+                        <div class="interest-item">
+                            <div class="item-image">
+                                <img src="https://www.fivb.com/wp-content/uploads/2024/03/ball.jpeg" alt="Volleyball">
+                            </div>
+                            <h5>Volleyball</h5>
+                            <p>Playing Volleyball give me such enjoyable moments</p>
+                        </div>
+                        <div class="interest-item">
+                            <div class="item-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSB4rOgio6tOEuLsfstcfJziaz5Nj3slsxDTw&s"
+                                    alt="Sleeping">
+                            </div>
+                            <h5>Sleeping</h5>
+                            <p>Best moments of all time lying on your bed the whole day</p>
+                        </div>
+                        <div class="interest-item">
+                            <div class="item-image">
+                                <img src="https://gonkbonk.com/_next/image?url=https%3A%2F%2Fd6fmx7z4dqmn1.cloudfront.net%2FDandadan%203-1024x768.webp&w=2048&q=75"
+                                    alt="Manga">
+                            </div>
+                            <h5>Reading Manga</h5>
+                            <p>Reading manga such a nice hobby for me</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Favorite Anime Category -->
+                <div class="interest-category scroll-reveal">
+                    <div class="category-header">
+                        <h4>Favorite Anime</h4>
+                    </div>
+                    <div class="category-items">
+                        <div class="interest-item">
+                            <div class="item-image">
+                                <img src="https://www.impericon.com/cdn/shop/articles/20241028_thelastattackmovie_1.jpg?v=1730100114"
+                                    alt="Attack on Titan">
+                            </div>
+                            <h5>Attack on Titan</h5>
+                            <p>Epic action anime with intense storytelling</p>
+                        </div>
+                        <div class="interest-item">
+                            <div class="item-image">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLgD1BP3vR7w6CB2oiuXhjOKN3Hts-y46czA&s"
+                                    alt="One Piece">
+                            </div>
+                            <h5>One Piece</h5>
+                            <p>Adventure and friendship</p>
+                        </div>
+                        <div class="interest-item">
+                            <div class="item-image">
+                                <img src="https://4kwallpapers.com/images/wallpapers/demon-slayer-2880x1800-23615.jpg"
+                                    alt="Demon Slayer">
+                            </div>
+                            <h5>Demon Slayer</h5>
+                            <p>Stunning animation and emotional character arcs</p>
+                        </div>
+                        <div class="interest-item">
+                            <div class="item-image">
+                                <img src="https://www.livemint.com/lm-img/img/2026/01/09/600x338/jjk_3_1767965678392_1767965690487.jpg"
+                                    alt="Jujutsu Kaisen">
+                            </div>
+                            <h5>Jujutsu Kaisen</h5>
+                            <p>Modern masterpiece with incredible fight choreography</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-background"></div>
+        <div class="skills-overlay"></div>
+        <div class="container skills-content">
+            <div class="section-header">
+                <h2>My <span class="accent">Skills</span></h2>
+                <div class="heading-underline"></div>
+            </div>
+
+            <!-- Technical Skills -->
+            <div class="skills-category">
+                <h3>Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item scroll-reveal">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-html5" style="color: #E34F26;"></i><span>HTML</span>
+                            <span class="skill-value">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item scroll-reveal">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-css" style="color: #1572B6;"></i><span>CSS</span>
+                            <span class="skill-value">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item scroll-reveal">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-js" style="color: #F7DF1E;"></i><span>JavaScript</span>
+                            <span class="skill-value">30%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item scroll-reveal">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-python" style="color: #3776AB;"></i><span>Python</span>
+                            <span class="skill-value">40%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item scroll-reveal">
+                        <div class="skill-header">
+                            <i class="fa-brands fa-java" style="color: #fff;"></i><span>Java</span>
+                            <span class="skill-value">60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item scroll-reveal">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-c" style="color: #F89820;"></i><span>C#</span>
+                            <span class="skill-value">40%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item scroll-reveal">
+                        <div class="skill-header">
+                            <i class="fa-solid fa-database" style="color: #F89820;"></i><span>Database</span>
+                            <span class="skill-value">40%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools & Technologies -->
+            <div class="skills-category">
+                <h3>Tools & Technologies</h3>
+                <div class="tools-grid">
+                    <div class="tool-item scroll-reveal">AndroidSt</div>
+                    <div class="tool-item scroll-reveal">VS Code</div>
+                    <div class="tool-item scroll-reveal">Figma</div>
+                    <div class="tool-item scroll-reveal">Lucid</div>
+                    <div class="tool-item scroll-reveal">Notepad++</div>
+                    <div class="tool-item scroll-reveal">Archi</div>
+                    <div class="tool-item scroll-reveal">SQL Server</div>
+                    <div class="tool-item scroll-reveal">Canva</div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">My <span class="orange">Projects</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/logo.png" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A modern, responsive portfolio website built with HTML, CSS, and JavaScript.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/Dentcare.png" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3>DentCare</h3>
+                        <p>DentCare, A Web and Mobile-Based Information System for Dr. Reina G. Gapit clinic.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/foodloop.webp" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3>FoodLoop</h3>
+                        <p>FOODLoop: A Web-Based Rotating Menu Sales and Inventory Management Information System for
+                            Ekisha Food Hub</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="image/2.png" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3>WebCSchool</h3>
+                        <p>The WebCSchool as a Database of SHS Program Offered of the School in Naga</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">XAMPP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="accent">Education</span></h2>
+                <div class="heading-underline"></div>
+            </div>
+
+            <div class="education-timeline">
+                <div class="education-item scroll-reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="education-card">
+                        <p class="education-year">2023 - Present</p>
+                        <h3>College</h3>
+                        <p class="education-school">STI College Naga</p>
+                        <p class="education-description">Focused on web development, software engineering, and data
+                            structures.</p>
+                    </div>
+                </div>
+
+                <div class="education-item scroll-reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="education-card">
+                        <p class="education-year">2021 - 2023</p>
+                        <h3>Senior High School</h3>
+                        <p class="education-school">STI College Naga</p>
+                        <p class="education-description">Intensive 12-week program covering HTML, CSS, JavaScript,
+                            React, Node.js, and databases.</p>
+                    </div>
+                </div>
+
+                <div class="education-item scroll-reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="education-card">
+                        <p class="education-year">2017-2021</p>
+                        <h3>Junior High School</h3>
+                        <p class="education-school">Pasacao Academy</p>
+                        <p class="education-description">Graduated with honors. Started learning web development as a
+                            hobby.</p>
+                    </div>
+                </div>
+
+                <div class="education-item scroll-reveal">
+                    <div class="timeline-marker"></div>
+                    <div class="education-card">
+                        <p class="education-year">2012-2017</p>
+                        <h3>Elementary</h3>
+                        <p class="education-school">Pasacao Central School</p>
+                        <p class="education-description">Graduated with honors. Started learning web development as a
+                            hobby.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact<span class="accent"> Me</span></h2>
+                <div class="heading-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info scroll-reveal">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-solid fa-envelope" style="color: #fff;"></i></div>
+                        <div>
+                            <p class="contact-label">Email</p>
+                            <a href="szedricksam@gmail.com" target="_blank"
+                                class="contact-link">szedricksam@gmai.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                        <div>
+                            <p class="contact-label">GitHub</p>
+                            <a href="https://github.com/cedddr" target="_blank" rel="noopener noreferrer"
+                                class="contact-link">github.com/cedddr</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fa-brands fa-linkedin" style="color: #1877F2;"></i></div>
+                        <div>
+                            <p class="contact-label">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/zedrick-sam-san-juan-397a15405/" target="_blank"
+                                rel="noopener noreferrer" class="contact-link">linkedin.com/in/zedricksanjuan</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form scroll-reveal">
+                    <form name="contact" method="POST" data-netlify="true">
+
+                        <!-- REQUIRED for Netlify -->
+                        <input type="hidden" name="form-name" value="contact">
+
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Zedrick San Juan. STI College Naga</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
