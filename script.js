@@ -1,5 +1,5 @@
 var typed = new Typed(".text", {
-    strings: ["Web Developer", "BSIT Student", "20 years old", "College Student"],
+    strings: ["Aspiring Web Developer", "BSIT Student", "20 years old"],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
@@ -116,4 +116,5 @@ window.addEventListener('resize', handleResize);
 window.addEventListener('load', () => {
     document.body.style.opacity = '1';
 });
+
 

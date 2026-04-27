@@ -7,13 +7,20 @@
 html {
     scroll-behavior: smooth;
 }
+
 body {
     color: #ffffff;
     background-color: #000000;
     font-family: 'Inter', sans-serif;
-    
+
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
     letter-spacing: 0.02em;
@@ -83,6 +90,7 @@ button {
     background-color: #5C4033;
     margin-top: 1rem;
 }
+
 /* Navigation bar */
 
 .navbar {
@@ -223,16 +231,6 @@ button {
     overflow: hidden;
 }
 
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-    z-index: 2;
-}
-
 .hero-content {
     position: relative;
     z-index: 3;
@@ -245,10 +243,23 @@ button {
     animation: slideUp 0.8s ease-out;
 }
 
+.hero-text h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+
 .hero-text .description {
     font-size: 1.1rem;
     color: #b0b0b0;
     margin-bottom: 1rem;
+    line-height: 1.8;
     animation: slideUp 0.8s ease-out 0.4s both;
 }
 
@@ -274,6 +285,7 @@ button {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -281,9 +293,12 @@ button {
 }
 
 @keyframes bounce {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateX(-50%) translateY(0);
     }
+
     50% {
         transform: translateX(-50%) translateY(-10px);
     }
@@ -338,14 +353,54 @@ button {
 }
 
 .home-img .img-box {
-    width: 27vw;
-    height: 27vw;
-    max-width: 300px;
-    max-height: 300px;
-    min-width: 180px;
-    min-height: 180px;
-    margin-right: 5rem;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #A67B5B;
+    box-shadow: 0 0 30px rgba(231, 130, 6, 0.4), 0 0 30px rgba(255, 140, 0, 0.1);
+    animation: floatCircle 4s ease-in-out infinite, rotateCircle 8s linear infinite;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8rem;
 }
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    50% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes floatCircle {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 
 @media (max-width: 768px) {
     .home-img {
@@ -356,8 +411,8 @@ button {
 
     .home-img .img-box {
         margin: 0 auto;
-        width: 400px;
-        height: 400px;
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -365,37 +420,17 @@ button {
     position: relative;
     width: 100%;
     height: 100%;
-    background: #000000;
     border-radius: 50%;
-    border: 4px solid #A67B5B;
     display: flex;
     justify-content: center;
     z-index: 1;
     overflow: hidden;
 }
 
-.home-img .img-box .img-item img {
-    top: 15px;
+.img-box .img-item img {
     position: absolute;
     display: block;
     width: 100%;
-    object-fit: cover;
-}
-
-@keyframes floatImage {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-15px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-.home-img .img-box {
-    animation: floatImage 3s ease-in-out infinite;
 }
 
 /* about section */
@@ -584,7 +619,7 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDSkCcsYkIXOHtnw1oylBWJKfH9guEIfpmQ&s);
+    background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663502235769/JJvZ697GZFdEu3UwQ4E9GX/skills-background-3K7L5snf27imMVWX2B9kWD.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -623,10 +658,17 @@ button {
 }
 
 .skill-item {
-    background-color: rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 140, 0, 0.05));
+    border: 1px solid #5C4033;
+    border-radius: 0.75rem;
     padding: 1.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid #333333;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    border-color: #A67B5B;
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.15), rgba(255, 140, 0, 0.08));
+    transform: translateY(-5px);
 }
 
 .skill-header {
@@ -650,13 +692,14 @@ button {
 
 .progress-fill {
     height: 100%;
-    background: linear-gradient(90deg, #A67B5B, #A67B5B);
-    animation: progressFill 1s ease-out forwards;
+    background: linear-gradient(90deg, #A67B5B, #5C4033);
+    border-radius: 10px;
+    animation: fillProgress 1.5s ease-out forwards;
 }
 
 @keyframes progressFill {
     from {
-        width: 0 !important;
+        width: 0;
     }
 }
 
@@ -664,6 +707,7 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 .tool-item {
@@ -681,6 +725,7 @@ button {
     border-color: #5C4033;
     background-color: rgba(255, 140, 0, 0.1);
     color: #A67B5B;
+    transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
@@ -733,7 +778,7 @@ button {
 /* Image / Placeholder */
 .project-image {
     height: 220px;
-    background: linear-gradient(135deg, rgba(255,140,0,0.2), rgba(255,140,0,0.05));
+    background: linear-gradient(135deg, rgba(255, 140, 0, 0.2), rgba(255, 140, 0, 0.05));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -811,7 +856,7 @@ button {
 }
 
 .education-timeline {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -1103,36 +1148,43 @@ button {
         transform: translateX(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideLeft {
     0% {
         transform: translateX(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideTop {
     0% {
         transform: translateY(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
     }
 }
+
 @keyframes slideBottom {
     0% {
         transform: translateY(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0px);
         opacity: 1;
