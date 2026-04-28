@@ -117,4 +117,29 @@ window.addEventListener('load', () => {
     document.body.style.opacity = '1';
 });
 
+//Toggle button
+const toggleBtn = document.getElementById("themeToggle");
+const body = document.body;
 
+toggleBtn.addEventListener("click", () => {
+    body.classList.toggle("light-mode");
+
+    // Save preference
+    if (body.classList.contains("light-mode")) {
+        localStorage.setItem("theme", "light");
+        toggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else {
+        localStorage.setItem("theme", "dark");
+        toggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
+});
+
+// Load saved theme
+window.addEventListener("load", () => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "light") {
+        body.classList.add("light-mode");
+        toggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    }
+});

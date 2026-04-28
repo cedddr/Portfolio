@@ -191,6 +191,186 @@ button {
     }
 }
 
+.theme-toggle {
+    background: transparent;
+    border: 2px solid #A67B5B;
+    color: #A67B5B;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.theme-toggle:hover {
+    background: #A67B5B;
+    color: #000;
+}
+
+/*Light mode*/
+body.light-mode {
+    background-color: #f5f7fa;
+    color: #1a1a1a;
+}
+body.light-mode .nav-menu {
+    background-color: #ffffff;
+}
+body.light-mode .navbar {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid #e0e0e0;
+}
+
+body.light-mode .nav-link {
+    color: #444;
+}
+
+body.light-mode .nav-link:hover {
+    color: #A67B5B;
+}
+body.light-mode .hero {
+    background: linear-gradient(135deg, #ffffff, #f3f3f3);
+}
+body.light-mode .btn-secondary {
+    border-color: #A67B5B;
+    color: #A67B5B;
+}
+
+body.light-mode .btn-secondary:hover {
+    background-color: #A67B5B;
+    color: #fff;
+}
+body.light-mode .hero-text h2,
+body.light-mode .hero-text .description {
+    color: #555;
+}
+
+body.light-mode .about {
+    background-color: #ffffff;
+}
+
+body.light-mode .about-content {
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+}
+
+body.light-mode .about-content p {
+    color: #555;
+}
+body.light-mode .interest-item {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+body.light-mode .interest-item:hover {
+    border-color: #A67B5B;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+body.light-mode .interest-item p {
+    color: #666;
+}
+body.light-mode .skills-overlay {
+    background-color: rgba(255,255,255,0.85);
+}
+
+body.light-mode .skill-item {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+body.light-mode .skill-item:hover {
+    border-color: #A67B5B;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+body.light-mode .progress-bar {
+    background-color: #ddd;
+}
+body.light-mode .tool-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    color: #444;
+}
+
+body.light-mode .tool-item:hover {
+    background-color: #f3f3f3;
+    color: #A67B5B;
+}
+body.light-mode .projects-section {
+    background-color: #f9f9f9;
+}
+
+body.light-mode .project-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+}
+
+body.light-mode .project-card:hover {
+    border-color: #A67B5B;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+body.light-mode .project-content p {
+    color: #666;
+}
+body.light-mode .education {
+    background-color: #ffffff;
+}
+body.light-mode .education h3 {
+    color: #444;
+}
+
+body.light-mode .education-card {
+    background: #ffffff;
+    border: 1px solid #ddd;
+}
+
+body.light-mode .education-card:hover {
+    border-color: #A67B5B;
+}
+
+body.light-mode .education-description {
+    color: #666;
+}
+body.light-mode .contact {
+    background-color: #f9f9f9;
+}
+body.light-mode .contact .contact-link {
+    color: #444;
+}
+body.light-mode .contact .contact-link:hover {
+    color: #A67B5B;
+}
+
+body.light-mode .form-group input,
+body.light-mode .form-group textarea {
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+body.light-mode .form-group input:focus,
+body.light-mode .form-group textarea:focus {
+    border-color: #A67B5B;
+    box-shadow: 0 0 8px rgba(166,123,91,0.3);
+}
+body.light-mode .btn-primary {
+    background-color: #A67B5B;
+    color: #fff;
+}
+
+body.light-mode .btn-primary:hover {
+    background-color: #8a6248;
+}
+body.light-mode .footer {
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+body.light-mode .footer p {
+    color: #777;
+}
+
 /* Hero section */
 @media (max-width: 768px) {
     .hero {
@@ -269,6 +449,17 @@ button {
     flex-wrap: wrap;
     animation: slideUp 0.8s ease-out 0.6s both;
 }
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid #A67B5B;
+    color: #A67B5B;
+}
+
+.btn-secondary:hover {
+    background-color: #A67B5B;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(166,123,91,0.3);
+}
 
 .scroll-indicator {
     position: absolute;
@@ -314,7 +505,7 @@ button {
     border: 2px solid #A67B5B;
     border-radius: 50%;
     font-size: 20px;
-    color: #ffffff;
+    color: #444;    
     text-decoration: none;
     margin: 20px 15px 30px 0;
     transition: .5s ease;
@@ -453,7 +644,6 @@ button {
 .about-content h2 {
     margin-bottom: 0.5rem;
 }
-
 .about-content .heading-underline {
     margin: 1.5rem 0 2rem 0;
     text-align: center;
@@ -514,7 +704,7 @@ button {
 
 .category-header h4 {
     font-size: 1.75rem;
-    color: #ffffff;
+    color: #A67B5B;
     margin: 0;
     padding-bottom: 1rem;
     border-bottom: 2px solid #5C4033;
@@ -613,28 +803,6 @@ button {
     overflow: hidden;
 }
 
-.skills-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://d2xsxph8kpxj0f.cloudfront.net/310519663502235769/JJvZ697GZFdEu3UwQ4E9GX/skills-background-3K7L5snf27imMVWX2B9kWD.webp');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    z-index: 1;
-}
-
-.skills-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 2;
-}
 
 .skills-content {
     position: relative;
@@ -679,7 +847,7 @@ button {
 }
 
 .skill-value {
-    color: #ffffff;
+    color: #5C4033;
 }
 
 .progress-bar {
@@ -832,12 +1000,12 @@ button {
 .project-link {
     font-size: 0.9rem;
     font-weight: 600;
-    color: #ffffff;
+    color: #5C4033;
     border-bottom: 1px solid transparent;
 }
 
 .project-link:hover {
-    color: #A67B5B;
+    color: #444;
     border-bottom: 1px solid #5C4033;
 }
 
