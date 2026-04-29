@@ -868,6 +868,7 @@ body.light-mode .footer p {
     color: #b0b0b0;
     font-weight: 600;
     transition: all 0.3s ease;
+    cursor: default;
 }
 
 .tool-item:hover {
