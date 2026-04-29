@@ -165,6 +165,7 @@ button {
 @media (max-width: 768px) {
     .mobile-menu-btn {
         display: flex;
+        margin-left: 73%;
     }
 
     .nav-menu {
@@ -243,32 +244,18 @@ body.light-mode .hero-text h2,
 body.light-mode .hero-text .description {
     color: #555;
 }
-
 body.light-mode .about {
     background-color: #ffffff;
 }
 
 body.light-mode .about-content {
     background: #ffffff;
-    border: 1px solid #e5e5e5;
 }
 
 body.light-mode .about-content p {
     color: #555;
 }
-body.light-mode .interest-item {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
-}
 
-body.light-mode .interest-item:hover {
-    border-color: #A67B5B;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-}
-
-body.light-mode .interest-item p {
-    color: #666;
-}
 body.light-mode .skills-overlay {
     background-color: rgba(255,255,255,0.85);
 }
@@ -287,14 +274,14 @@ body.light-mode .progress-bar {
     background-color: #ddd;
 }
 body.light-mode .tool-item {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    color: #444;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    color: #555;
 }
 
 body.light-mode .tool-item:hover {
-    background-color: #f3f3f3;
-    color: #A67B5B;
+    border-color: #A67B5B;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 body.light-mode .projects-section {
     background-color: #f9f9f9;
@@ -335,6 +322,7 @@ body.light-mode .education-description {
 body.light-mode .contact {
     background-color: #f9f9f9;
 }
+
 body.light-mode .contact .contact-link {
     color: #444;
 }
@@ -347,6 +335,9 @@ body.light-mode .form-group textarea {
     background-color: #ffffff;
     color: #000;
     border: 1px solid #ddd;
+}
+body.light-mode .form-group label {
+    color: #000;
 }
 
 body.light-mode .form-group input:focus,
@@ -658,6 +649,7 @@ body.light-mode .footer p {
 
 .about-content .btn {
     margin-top: 1rem;
+    margin-bottom: 7rem;
 }
 
 @media (max-width: 768px) {
@@ -671,33 +663,7 @@ body.light-mode .footer p {
     }
 }
 
-/* Personal Interests Section */
-.interests-section {
-    margin-top: 4rem;
-    padding-top: 4rem;
-}
-
-.interests-section h3 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-}
-
-.interests-section .heading-underline.center {
-    margin: 1rem auto 3rem auto;
-}
-
-/* Separate Interest Categories */
-.interest-category {
-    margin-bottom: 4rem;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid #333333;
-}
-
-.interest-category:last-child {
-    border-bottom: none;
-}
-
+/* Personal Interests Section | Separate Interest Categories */
 .category-header {
     margin-bottom: 2rem;
 }
@@ -717,58 +683,59 @@ body.light-mode .footer p {
     gap: 2rem;
     margin-top: 2rem;
 }
+/* Wrapper container for both categories */
+.interests-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(166, 123, 91, 0.2);
+    background: linear-gradient(
+        135deg,
+        rgba(255, 140, 0, 0.05),
+        rgba(255, 140, 0, 0.02)
+    );
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+.interests-wrapper:hover {
+    box-shadow: 0 15px 40px rgba(166,123,91,0.2);
+}
 
-.interest-item {
-    background: linear-gradient(135deg, rgba(255, 140, 0, 0.08), rgba(255, 140, 0, 0.02));
-    border: 1px solid rgba(255, 140, 0, 0.2);
-    border-radius: 0.75rem;
-    overflow: hidden;
-    transition: all 0.3s ease;
+/* spacing between categories */
+.interests-wrapper .interest-category {
+    margin-bottom: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(166, 123, 91, 0.2);
+}
+
+.interests-wrapper .interest-category:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+/* Chips Style */
+.chips {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 0.65rem;
 }
 
-.interest-item:hover {
-    border-color: #A67B5B;
-    background: linear-gradient(135deg, rgba(255, 140, 0, 0.12), rgba(255, 140, 0, 0.05));
-    transform: translateY(-8px);
-    box-shadow: 0 15px 40px rgba(255, 140, 0, 0.25);
-}
-
-.item-image {
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-    background: linear-gradient(135deg, rgba(255, 140, 0, 0.1), rgba(255, 140, 0, 0.05));
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.item-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.interest-item:hover .item-image img {
-    transform: scale(1.1);
-}
-
-.interest-item h5 {
-    font-size: 1.1rem;
+.chip {
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    border: 1px solid #A67B5B;
+    background: rgba(166, 123, 91, 0.1);
     color: #A67B5B;
-    margin: 1rem 1rem 0.5rem 1rem;
-    font-weight: 600;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
-.interest-item p {
-    color: #b0b0b0;
-    font-size: 0.9rem;
-    margin: 0 1rem 1rem 1rem;
-    line-height: 1.5;
-    flex-grow: 1;
+.chip:hover {
+    background: #A67B5B;
+    color: #000;
+    transform: translateY(-2px);
 }
 
 @media (max-width: 768px) {
@@ -810,7 +777,7 @@ body.light-mode .footer p {
 }
 
 .skills-category {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .skills-category h3 {
@@ -890,9 +857,9 @@ body.light-mode .footer p {
 }
 
 .tool-item:hover {
-    border-color: #5C4033;
+    border-color: #A67B5B;
     background-color: rgba(255, 140, 0, 0.1);
-    color: #A67B5B;
+    color: #ffffff;
     transform: translateY(-3px);
 }
 
